@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Apollo Gears Sidebar",
+  title: "Apollo Gears Dashboard",
   description: "Welcome to Apollo Gears: The Ultimate Ride Sharing Platform",
 };
 
