@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Apollo Gears Dashboard",
+  title: "Apollo Gears",
   description: "Welcome to Apollo Gears: The Ultimate Ride Sharing Platform",
 };
 
@@ -12,7 +12,7 @@ export default function CommonLayout({
 }>) {
   return (
     <div>
-      Navbar
+      Comon Navbar
       {children}
     </div>
   );
