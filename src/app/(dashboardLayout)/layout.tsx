@@ -11,5 +11,5 @@ export default function DashboardLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <body className={`antialiased`}>{children}</body>;
+  return <div>{children}</div>;
 }
