@@ -12,7 +12,7 @@ export default function DashboardLayout({
 }>) {
   return (
     <div>
-      Navbar
+      Dashboard Common Navbar
       {children}
     </div>
   );
