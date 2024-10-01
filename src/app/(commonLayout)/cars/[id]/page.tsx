@@ -3,7 +3,7 @@ import { useParams } from "next/navigation";
 
 const CarDetailsPage = ({ params }: { params: object }) => {
   console.log(params);
-  const { id } = useParams();
+  const { id } = params;
   return <div>CarDetailsPage {id}</div>;
 };
 
