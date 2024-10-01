@@ -1,5 +1,5 @@
-const page = () => {
+const DriverDashboardPage = () => {
   return <div></div>;
 };
 
-export default page;
+export default DriverDashboardPage;
