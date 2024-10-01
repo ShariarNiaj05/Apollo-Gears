@@ -10,5 +10,10 @@ export default function DriverDashboardLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div>{children}</div>;
+  return (
+    <div>
+      Driver Dashboard Sidebar
+      {children}
+    </div>
+  );
 }
