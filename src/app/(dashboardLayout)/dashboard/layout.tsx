@@ -12,7 +12,7 @@ export default function UserDashboardLayout({
 }>) {
   return (
     <div>
-      Dashboard Common Navbar
+      User Dashboard Sidebar
       {children}
     </div>
   );
