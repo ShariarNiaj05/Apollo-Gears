@@ -12,7 +12,7 @@ export default function AdminDashboardLayout({
 }>) {
   return (
     <div>
-      Dashboard Common Navbar
+      Admin Dashboard Sidebar
       {children}
     </div>
   );
