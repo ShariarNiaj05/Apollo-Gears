@@ -1,6 +1,5 @@
 import { Card, CardBody } from "@nextui-org/react";
 import MotionCar from "./MotionCar";
-// import BannerButton from "./BannerButton";
 export default function Banner() {
   return (
     <Card className="py-4 flex" shadow="none">
@@ -15,7 +14,7 @@ export default function Banner() {
               Find your ideal ride for any adventure with our diverse range of
               affordable and dependable car rentals
             </h4>
-            {/* <BannerButton /> */}
+            <BannerButton />
           </div>
           <MotionCar />
         </div>
