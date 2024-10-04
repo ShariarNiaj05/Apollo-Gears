@@ -14,6 +14,7 @@ const CarDetailsPage = async ({
   const { id } = params;
 
   const res = await fetch(`http://localhost:5000/api/v1/cars/${params.id}`);
+  const { data } = await res.json();
   /*   const data = {
     name: "Mercedes-Benz E-Class",
     brand: "Mercedes-Benz",
