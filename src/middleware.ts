@@ -9,8 +9,9 @@ export async function middleware(request: NextRequest) {
   if (!accessToken) {
     if (authRoutes.includes(pathName)) {
       return NextResponse.next();
+    } else {
+      return NextResponse.redirect(new URL("/login", request.url));
     }
-    return NextResponse.redirect(new URL("/login", request.url));
   }
 }
 
