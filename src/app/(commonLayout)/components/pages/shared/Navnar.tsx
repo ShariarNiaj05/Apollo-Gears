@@ -7,8 +7,8 @@ import {
 } from "@nextui-org/react";
 import { Cog } from "lucide-react";
 import Link from "next/link";
-// import { ThemeSwitcher } from "./ThemeSwitcher";
-// import { ThemeSwitcher } from "./ThemeSwitcher";
+import { ThemeSwitcher } from "./ThemeSwitcher";
+
 export default function NavBar() {
   const routeMap: Record<string, string> = {
     user: "/dashboard",
@@ -42,7 +42,9 @@ export default function NavBar() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem>{/* <ThemeSwitcher /> */}</NavbarItem>
+        <NavbarItem>
+          <ThemeSwitcher />
+        </NavbarItem>
 
         {/* {user ? (
           <NavbarItem>
