@@ -14,7 +14,7 @@ const CarDetailsPage = ({
   const { id } = params;
   console.log(id);
   console.log(searchParams);
-  const data = {
+  /*   const data = {
     name: "Mercedes-Benz E-Class",
     brand: "Mercedes-Benz",
     model: "E-Class-2023",
@@ -25,7 +25,7 @@ const CarDetailsPage = ({
     passengerCapacity: "5",
     color: "Gray",
     condition: "New",
-  };
+  }; */
   return (
     <div className="min-h-screen flex justify-center items-center p-4 bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-900 dark:to-gray-700">
       <Card
