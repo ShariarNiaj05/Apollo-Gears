@@ -1,5 +1,11 @@
+import GoogleLoginBtn from "../components/pages/shared/GoogleLoginBtn";
+
 const LoginPage = () => {
-  return <div>LoginPage</div>;
+  return (
+    <>
+      <GoogleLoginBtn />
+    </>
+  );
 };
 
 export default LoginPage;
