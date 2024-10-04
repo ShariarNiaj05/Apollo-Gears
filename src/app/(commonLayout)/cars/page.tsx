@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CarsPage = async () => {
   const res = await fetch("http://localhost:5000/api/v1/cars");
-  const data = await res.json();
+  const { data } = await res.json();
   console.log(data);
   // const res = await fetch("http://localhost:5000/api/v1/cars", {
   //   next: {},
@@ -21,7 +21,7 @@ const CarsPage = async () => {
 
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-6 w-full max-w-7xl">
-        {data?.data?.map((item: any) => (
+        {data?.map((item: any) => (
           <Card
             key={item._id}
             className="relative w-full h-[350px] rounded-xl overflow-hidden shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:z-20"
