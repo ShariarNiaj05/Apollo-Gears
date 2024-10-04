@@ -7,14 +7,14 @@ import {
 } from "@nextui-org/react";
 import { Cog } from "lucide-react";
 import Link from "next/link";
-import { ThemeSwitcher } from "./ThemeSwitcher";
+// import { ThemeSwitcher } from "./ThemeSwitcher";
 // import { ThemeSwitcher } from "./ThemeSwitcher";
 export default function NavBar() {
-  const routeMap: Record<string, string> = {
-    user: "/dashboard",
-    admin: "/dashboard/admin",
-    driver: "/dashboard/driver",
-  };
+  // const routeMap: Record<string, string> = {
+  //   user: "/dashboard",
+  //   admin: "/dashboard/admin",
+  //   driver: "/dashboard/driver",
+  // };
 
   return (
     <Navbar maxWidth="2xl">
