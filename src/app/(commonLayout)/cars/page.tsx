@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import nexiosInstance from "@/config/nexios.config";
 import { Card, CardFooter, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
