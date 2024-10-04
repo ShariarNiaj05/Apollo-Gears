@@ -6,7 +6,7 @@ export async function middleware(request: NextRequest) {
   const accessToken = cookies().get("accessToken")?.value;
 
   if (!accessToken) {
-    return NextResponse.redirect(new URL("/login"));
+    return NextResponse.redirect("http://localhost:3000/login");
   }
 }
 
@@ -16,6 +16,6 @@ export const config = {
     // "/register",
     "/dashboard/:page*",
     "/admin-dashboard/:page*",
-    "driver-dashboard/:page*",
+    "/driver-dashboard/:page*",
   ],
 };
