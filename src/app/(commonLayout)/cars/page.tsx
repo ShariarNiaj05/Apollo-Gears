@@ -10,7 +10,10 @@ const CarsPage = async () => {
     cache: "no-store",
   }); */
 
-  const { data } = await nexiosInstance.get("/cars", { cache: "no-store" });
+  const { data }: any = await nexiosInstance.get("/cars", {
+    cache: "no-store",
+    next: {},
+  });
 
   console.log(data);
 
