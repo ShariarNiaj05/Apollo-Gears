@@ -13,3 +13,5 @@ const defaultConfig: NexiosOptions = {
 };
 
 const nexiosInstance = new Nexios(defaultConfig);
+
+export default nexiosInstance;

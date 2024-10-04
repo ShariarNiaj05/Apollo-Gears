@@ -9,12 +9,7 @@ const CarsPage = async () => {
   });
   const { data } = await res.json();
   console.log(data);
-  // const res = await fetch("http://localhost:5000/api/v1/cars", {
-  //   next: {},
-  //   cache: "no-store",
-  // });
 
-  //res,json()
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
       {/* Page Title */}
