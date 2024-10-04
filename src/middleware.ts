@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
+import { jwtVerify } from "./helpers/jwtHelpers";
 
 const authRoutes = ["/login", "/register"];
 export async function middleware(request: NextRequest) {
@@ -16,6 +17,8 @@ export async function middleware(request: NextRequest) {
 
   // role based authorization
   let decodedToken = null;
+
+  decodedToken = jwtVerify(accessToken);
 }
 
 export const config = {
