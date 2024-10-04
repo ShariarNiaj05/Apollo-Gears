@@ -1,5 +1,5 @@
 import { Card, CardBody } from "@nextui-org/react";
-import BannerButton from "./BannerButton";
+// import BannerButton from "./BannerButton";
 import MotionCar from "./MotionCar";
 export default function Banner() {
   return (
@@ -15,7 +15,7 @@ export default function Banner() {
               Find your ideal ride for any adventure with our diverse range of
               affordable and dependable car rentals
             </h4>
-            <BannerButton />
+            {/* <BannerButton /> */}
           </div>
           <MotionCar />
         </div>
