@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NavBar from "./components/pages/shared/Navnar";
+import Footer from "./components/pages/shared/Footer";
 
 export const metadata: Metadata = {
   title: "Apollo Gears",
@@ -15,6 +16,7 @@ export default function CommonLayout({
     <div>
       <NavBar />
       {children}
+      <Footer />
     </div>
   );
 }
