@@ -1,3 +1,4 @@
+import nexiosInstance from "@/config/nexios.config";
 import { profile } from "console";
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
@@ -11,11 +12,12 @@ const handler = NextAuth({
   ],
 
   callbacks: {
-    signIn: ({ profile, account }) => {
+    signIn: async ({ profile, account }) => {
       /*  if (!profile || !account) {
             return false;
           } */
       if (account?.provider === "google") {
+        const response = await nexiosInstance.post("/auth/login", {});
       }
       return true;
     },
