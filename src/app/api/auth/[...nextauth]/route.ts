@@ -22,7 +22,6 @@ const handler = NextAuth({
           img: profile?.image,
           email: profile?.email,
         });
-        return response;
       }
       return true;
     },
