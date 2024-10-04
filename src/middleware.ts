@@ -1,12 +1,13 @@
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 
+const authRoutes = ["/login", "/register"];
 export async function middleware(request: NextRequest) {
   const { pathName } = request.nextUrl;
   const accessToken = cookies().get("accessToken")?.value;
 
   if (!accessToken) {
-    if (pathName === "/login" || pathName === "/register") {
+    if (authRoutes.includes(pathName)) {
       return NextResponse.next();
     }
     return NextResponse.redirect(new URL("/login", request.url));
