@@ -15,6 +15,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // role based authorization
+  let decodedToken = null;
 }
 
 export const config = {
