@@ -1,9 +1,13 @@
 import { cookies } from "next/headers";
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 export async function middleware(request: NextRequest) {
   const { pathName } = request.nextUrl;
   const accessToken = cookies().get("accessToken")?.value();
+
+  if (!accessToken) {
+    return NextResponse.redirect(new URL("/login"));
+  }
 }
 
 export const config = {
