@@ -12,6 +12,9 @@ const handler = NextAuth({
 
   callbacks: {
     signIn: ({ profile, account }) => {
+      if (!profile || !account) {
+        return false;
+      }
       return true;
     },
   },
