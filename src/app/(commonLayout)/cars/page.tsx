@@ -1,6 +1,5 @@
 import nexiosInstance from "@/config/nexios.config";
 import { Card, CardFooter, CardHeader } from "@nextui-org/react";
-import next from "next";
 import Image from "next/image";
 import Link from "next/link";
 
