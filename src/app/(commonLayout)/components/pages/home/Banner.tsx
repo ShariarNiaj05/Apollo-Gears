@@ -1,5 +1,6 @@
 import { Card, CardBody } from "@nextui-org/react";
 import MotionCar from "./MotionCar";
+import BannerButton from "./BannerButton";
 export default function Banner() {
   return (
     <Card className="py-4 flex" shadow="none">
