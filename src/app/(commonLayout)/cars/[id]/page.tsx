@@ -3,17 +3,17 @@
 import { Card, CardFooter, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
 
-const CarDetailsPage = ({
+const CarDetailsPage = async ({
   params,
-  searchParams,
-}: {
+}: // searchParams,
+{
   params: { id: string };
   searchParams: any;
 }) => {
   console.log(params);
   const { id } = params;
-  console.log(id);
-  console.log(searchParams);
+
+  const res = await fetch("");
   /*   const data = {
     name: "Mercedes-Benz E-Class",
     brand: "Mercedes-Benz",
