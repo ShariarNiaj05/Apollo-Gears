@@ -16,4 +16,8 @@ export const jwtVerify = (token: string) => {
   }
 };
 
-export const decode = (token: string) => {};
+export const decode = (token: string) => {
+  const decoded = jwtDecode(token) as JwtPayload;
+
+  return decoded;
+};
