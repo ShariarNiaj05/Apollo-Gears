@@ -1,5 +1,6 @@
 import nexiosInstance from "@/config/nexios.config";
 import { Card, CardFooter, CardHeader } from "@nextui-org/react";
+import next from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,8 +10,8 @@ const CarsPage = async () => {
     cache: "no-store",
   }); */
 
-  const res = await nexiosInstance.get("/cars", { cache: "no-store" });
-  const { data } = res;
+  const { data } = await nexiosInstance.get("/cars", { cache: "no-store" });
+
   console.log(data);
 
   return (
