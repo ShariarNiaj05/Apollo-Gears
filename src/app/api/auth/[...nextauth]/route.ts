@@ -12,10 +12,10 @@ const handler = NextAuth({
 
   callbacks: {
     signIn: ({ profile, account }) => {
+      /*  if (!profile || !account) {
+            return false;
+          } */
       if (account?.provider === "google") {
-        if (!profile || !account) {
-          return false;
-        }
       }
       return true;
     },
