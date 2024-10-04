@@ -8,8 +8,9 @@ const CarsPage = async () => {
     next: {},
     cache: "no-store",
   }); */
+
   const res = await nexiosInstance.get("/cars", { cache: "no-store" });
-  const { data } = await res.json();
+  const { data } = res;
   console.log(data);
 
   return (
