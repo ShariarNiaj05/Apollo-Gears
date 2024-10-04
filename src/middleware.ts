@@ -1,5 +1,5 @@
 export async function middleware() {}
 
 export const config = {
-  matcher: [],
+  matcher: ["/dashboard", "/admin-dashboard", "driver-dashboard"],
 };
