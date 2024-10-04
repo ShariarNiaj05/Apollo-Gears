@@ -14,8 +14,7 @@ const CarDetailsPage = async ({
   console.log(params);
   const { id } = params;
 
-  const res = await nexiosInstance.get(`/cars/${id}`);
-  const { data } = await res.json();
+  const { data } = await nexiosInstance.get(`/cars/${id}`);
   /*   const data = {
     name: "Mercedes-Benz E-Class",
     brand: "Mercedes-Benz",
