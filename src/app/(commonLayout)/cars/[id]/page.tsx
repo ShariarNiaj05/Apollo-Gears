@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+import { Card, CardFooter, CardHeader } from "@nextui-org/react";
+import Image from "next/image";
+
 const CarDetailsPage = ({
   params,
   searchParams,
