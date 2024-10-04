@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import nexiosInstance from "@/config/nexios.config";
 import { Card, CardFooter, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
 
@@ -13,9 +14,7 @@ const CarDetailsPage = async ({
   console.log(params);
   const { id } = params;
 
-  const res = await fetch(`http://localhost:5000/api/v1/cars/${id}`, {
-    cache: "no-store",
-  });
+  const res = await nexiosInstance.get(`/cars/${id}`);
   const { data } = await res.json();
   /*   const data = {
     name: "Mercedes-Benz E-Class",
