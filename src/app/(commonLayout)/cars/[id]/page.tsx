@@ -36,7 +36,9 @@ const CarDetailsPage = ({
         {/* Car Image with Overlay */}
         <div className="relative">
           <Image
-            removeWrapper
+            // removeWrapper
+            width={360}
+            height={360}
             alt={data?.name}
             className="w-full h-[500px] object-cover transition-transform transform hover:scale-110"
             src={data?.image}
