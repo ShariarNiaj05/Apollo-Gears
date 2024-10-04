@@ -1,3 +1,4 @@
+import { profile } from "console";
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
@@ -9,7 +10,9 @@ const handler = NextAuth({
     }),
   ],
 
-  callbacks: {},
+  callbacks: {
+    signIn: ({ profile, account }) => {},
+  },
   pages: {
     signIn: "/login",
   },
