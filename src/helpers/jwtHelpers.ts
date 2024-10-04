@@ -1,4 +1,5 @@
 import { JwtPayload } from "jsonwebtoken";
+import { jwtDecode } from "jwt-decode";
 
 export const jwtVerify = (token: string) => {
   try {

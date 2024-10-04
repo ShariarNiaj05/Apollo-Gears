@@ -11,8 +11,10 @@
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
     "@types/jsonwebtoken": "^9.0.7",
+    "@types/jwt-decode": "^3.1.0",
     "framer-motion": "^11.11.0",
     "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
     "lucide-react": "^0.447.0",
     "nexios-http": "^1.1.21",
     "next": "14.2.13",
