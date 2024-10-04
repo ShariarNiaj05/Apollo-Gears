@@ -1,3 +1,4 @@
+import { Card, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 
