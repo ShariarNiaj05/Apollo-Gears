@@ -1,12 +1,14 @@
+import nexiosInstance from "@/config/nexios.config";
 import { Card, CardFooter, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 
 const CarsPage = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/cars", {
+  /*   const res = await fetch("http://localhost:5000/api/v1/cars", {
     next: {},
     cache: "no-store",
-  });
+  }); */
+  const res = await nexiosInstance.get("/cars", { cache: "no-store" });
   const { data } = await res.json();
   console.log(data);
 
