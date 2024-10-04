@@ -3,7 +3,7 @@ import { NexiosOptions } from "nexios-http/types/interfaces";
 
 // Default configuration for Nexios
 const defaultConfig: NexiosOptions = {
-  baseURL: "https://jsonplaceholder.typicode.com",
+  baseURL: "http://localhost:5000/api/v1",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
