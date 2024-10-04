@@ -1,1 +1,1 @@
-export async function middleware(params: type) {}
+export async function middleware() {}
