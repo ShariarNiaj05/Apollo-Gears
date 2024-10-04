@@ -15,6 +15,18 @@ const CarDetailsPage = ({
   const { id } = params;
   console.log(id);
   console.log(searchParams);
+  const data = {
+    name: "Mercedes-Benz E-Class",
+    brand: "Mercedes-Benz",
+    model: "E-Class-2023",
+    image:
+      "https://stimg2.cardekho.com/images/roadTestimages/userimages/722/1620195837912/GeneralRoadTest.jpg?tr=w-360",
+    rating: 4.9,
+    fuelType: "d",
+    passengerCapacity: "5",
+    color: "Gray",
+    condition: "New",
+  };
   return (
     <div className="min-h-screen flex justify-center items-center p-4 bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-900 dark:to-gray-700">
       <Card
