@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import nexiosInstance from "@/config/nexios.config";
 import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { cookies } from "next/headers";
+import nexiosInstance from "./nexios.config";
 
 export const AuthOptions: NextAuthOptions = {
   providers: [
