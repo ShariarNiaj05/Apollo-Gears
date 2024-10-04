@@ -14,8 +14,8 @@ const CarDetailsPage = async ({
   console.log(params);
   const { id } = params;
 
-  const { data } = await nexiosInstance.get(`/cars/${id}`);
-
+  const res = await nexiosInstance.get(`/cars/${id}`);
+  const data = res?.data?.data;
   return (
     <div className="min-h-screen flex justify-center items-center p-4 bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-900 dark:to-gray-700">
       <Card
