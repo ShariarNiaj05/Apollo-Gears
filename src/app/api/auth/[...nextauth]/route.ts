@@ -13,11 +13,13 @@ const handler = NextAuth({
 
   callbacks: {
     signIn: async ({ profile, account }) => {
-      /*  if (!profile || !account) {
-            return false;
-          } */
+      if (!profile || !account) {
+        return false;
+      }
       if (account?.provider === "google") {
-        const response = await nexiosInstance.post("/auth/login", {});
+        const response = await nexiosInstance.post("/auth/login", {
+          name: profile?.name,
+        });
       }
       return true;
     },
