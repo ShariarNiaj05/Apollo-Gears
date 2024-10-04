@@ -1,6 +1,6 @@
 import { Card, CardBody } from "@nextui-org/react";
 // import BannerButton from "./BannerButton";
-// import MotionCar from "./MotionCar";
+import MotionCar from "./MotionCar";
 export default function Banner() {
   return (
     <Card className="py-4 flex" shadow="none">
@@ -17,7 +17,7 @@ export default function Banner() {
             </h4>
             {/* <BannerButton /> */}
           </div>
-          {/* <MotionCar /> */}
+          <MotionCar />
         </div>
       </CardBody>
     </Card>
