@@ -14,7 +14,7 @@ const CarsPage = () => {
       fuelType: "d",
       passengerCapacity: "5",
       color: "Gray",
-      condition: "Nesw",
+      condition: "New",
     },
   ];
   return (
@@ -43,10 +43,12 @@ const CarsPage = () => {
 
             {/* Car Image */}
             <Image
-              removeWrapper
+              // removeWrapper
               alt={item.name}
               className="z-0 w-full h-full object-cover transition-transform duration-500"
               src={item.image}
+              width={360}
+              height={360}
             />
 
             {/* Card Footer */}
