@@ -19,7 +19,10 @@ const handler = NextAuth({
       if (account?.provider === "google") {
         const response = await nexiosInstance.post("/auth/login", {
           name: profile?.name,
+          img: profile?.image,
+          email: profile?.email,
         });
+        return response;
       }
       return true;
     },
