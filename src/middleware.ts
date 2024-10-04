@@ -18,7 +18,9 @@ export async function middleware(request: NextRequest) {
   // role based authorization
   let decodedToken = null;
 
-  decodedToken = jwtVerify(accessToken);
+  decodedToken = jwtVerify(accessToken) as any;
+
+  const { role } = decodedToken;
 
   if (role === "admin" && pathname === "admin-dashboard") {
     return NextResponse.next();
