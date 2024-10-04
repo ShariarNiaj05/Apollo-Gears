@@ -6,7 +6,7 @@ export async function middleware(request: NextRequest) {
   const accessToken = cookies().get("accessToken")?.value;
 
   if (!accessToken) {
-    return NextResponse.redirect("http://localhost:3000/login");
+    return NextResponse.redirect(new URL("/login", request.url));
   }
 }
 
