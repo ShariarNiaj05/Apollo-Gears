@@ -16,6 +16,66 @@ const CarsPage = () => {
       color: "Gray",
       condition: "New",
     },
+    {
+      name: "Mercedes-Benz E-Class",
+      brand: "Mercedes-Benz",
+      model: "E-Class-2023",
+      image:
+        "https://stimg2.cardekho.com/images/roadTestimages/userimages/722/1620195837912/GeneralRoadTest.jpg?tr=w-360",
+      rating: 4.9,
+      fuelType: "d",
+      passengerCapacity: "5",
+      color: "Gray",
+      condition: "New",
+    },
+    {
+      name: "Mercedes-Benz E-Class",
+      brand: "Mercedes-Benz",
+      model: "E-Class-2023",
+      image:
+        "https://stimg2.cardekho.com/images/roadTestimages/userimages/722/1620195837912/GeneralRoadTest.jpg?tr=w-360",
+      rating: 4.9,
+      fuelType: "d",
+      passengerCapacity: "5",
+      color: "Gray",
+      condition: "New",
+    },
+    {
+      name: "Mercedes-Benz E-Class",
+      brand: "Mercedes-Benz",
+      model: "E-Class-2023",
+      image:
+        "https://stimg2.cardekho.com/images/roadTestimages/userimages/722/1620195837912/GeneralRoadTest.jpg?tr=w-360",
+      rating: 4.9,
+      fuelType: "d",
+      passengerCapacity: "5",
+      color: "Gray",
+      condition: "New",
+    },
+    {
+      name: "Mercedes-Benz E-Class",
+      brand: "Mercedes-Benz",
+      model: "E-Class-2023",
+      image:
+        "https://stimg2.cardekho.com/images/roadTestimages/userimages/722/1620195837912/GeneralRoadTest.jpg?tr=w-360",
+      rating: 4.9,
+      fuelType: "d",
+      passengerCapacity: "5",
+      color: "Gray",
+      condition: "New",
+    },
+    {
+      name: "Mercedes-Benz E-Class",
+      brand: "Mercedes-Benz",
+      model: "E-Class-2023",
+      image:
+        "https://stimg2.cardekho.com/images/roadTestimages/userimages/722/1620195837912/GeneralRoadTest.jpg?tr=w-360",
+      rating: 4.9,
+      fuelType: "d",
+      passengerCapacity: "5",
+      color: "Gray",
+      condition: "New",
+    },
   ];
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
