@@ -19,6 +19,10 @@ export async function middleware(request: NextRequest) {
   let decodedToken = null;
 
   decodedToken = jwtVerify(accessToken);
+
+  if (role === "admin" && pathname === "admin-dashboard") {
+    return NextResponse.next();
+  }
 }
 
 export const config = {
