@@ -1,4 +1,5 @@
 import { Nexios } from "nexios-http";
+import { NexiosOptions } from "nexios-http/types/interfaces";
 
 // Default configuration for Nexios
 const defaultConfig: NexiosOptions = {
