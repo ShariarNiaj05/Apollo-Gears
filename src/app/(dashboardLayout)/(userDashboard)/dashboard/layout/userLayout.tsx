@@ -1,5 +1,4 @@
 "use client";
-
 import { SidebarWrapper } from "@/app/(dashboardLayout)/components/sidebar/userSidebar";
 
 interface Props {
