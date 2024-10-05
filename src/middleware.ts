@@ -23,7 +23,8 @@ export async function middleware(request: NextRequest) {
 
   console.log("decodedToken", decodedToken);
   const { role } = decodedToken;
-
+  console.log(role, "role");
+  console.log(pathname, "pathname");
   if (role === "admin" && pathname === "admin-dashboard") {
     return NextResponse.next();
   }
