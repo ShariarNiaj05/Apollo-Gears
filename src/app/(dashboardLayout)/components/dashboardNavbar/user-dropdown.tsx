@@ -1,4 +1,3 @@
-// import { ThemeSwitcher } from "@/app/(commonLayout)/components/page/shared/ThemeSwitcher";
 import {
   Avatar,
   Dropdown,
@@ -9,13 +8,6 @@ import {
 } from "@nextui-org/react";
 
 export const UserDropdown = () => {
-  //   const router = useRouter();
-  //   const {user,setUser} = useAuth();
-  //   const logOutUser = async () => {
-  //     await logOut();
-  //     setUser(null)
-  //     router.push("/")
-  //   };
   return (
     <Dropdown>
       <NavbarItem>
