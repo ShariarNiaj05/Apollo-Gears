@@ -10,10 +10,5 @@ export default function CommonDashboardLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div>
-      Dashboard Common Navbar
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }
