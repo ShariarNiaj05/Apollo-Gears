@@ -3,11 +3,10 @@ import { CollapseItems } from "./collapse-items";
 import { SidebarItem } from "./sidebar-item";
 import { SidebarMenu } from "./sidebar-menu";
 import { Sidebar } from "./sidebar.styles";
-
 import { Car, Cog, Home, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useSidebarContext } from "../../layout/layout-context";
+import { useSidebarContext } from "@/app/(dashboardLayout)/layout/layout-context";
 
 export const AdminSidebarWrapper = () => {
   const pathname = usePathname();
