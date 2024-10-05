@@ -37,8 +37,6 @@ const AddCarForm = ({ onClose }: any) => {
   const [state, formAction] = useFormState(createCar, null);
 
   const ref = createRef<HTMLFormElement>();
-
-  //dispatch(createCar(oldData, newFormData));
   useEffect(() => {
     if (state && state.success) {
       alert(state.message);
