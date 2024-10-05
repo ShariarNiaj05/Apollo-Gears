@@ -12,7 +12,13 @@ export async function middleware(request: NextRequest) {
     if (authRoutes.includes(pathname)) {
       return NextResponse.next();
     } else {
-      return NextResponse.redirect(new URL("/login", request.url));
+      // return NextResponse.redirect(new URL("/login", request.url));
+      return NextResponse.redirect(
+        new URL(
+          pathname ? `/login?redirect=${pathname}` : "/login",
+          request.url
+        )
+      );
     }
   }
 
