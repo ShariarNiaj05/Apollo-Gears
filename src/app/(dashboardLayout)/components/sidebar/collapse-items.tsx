@@ -9,8 +9,6 @@ interface Props {
 }
 
 export const CollapseItems = ({ icon, items, title }: Props) => {
-  // const [open, setOpen] = useState(false);
-
   return (
     <div className="flex gap-4 h-full items-center cursor-pointer">
       <Accordion className="px-0">
