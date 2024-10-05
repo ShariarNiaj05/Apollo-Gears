@@ -1,7 +1,7 @@
 "use client";
 
-import { NavbarWrapper } from "../../components/dashboardNavbar/dashboardNavbar";
-import { AdminSidebarWrapper } from "../../components/sidebar/adminSidebar";
+import { NavbarWrapper } from "../components/dashboardNabbar/dashboardNavbar";
+import { AdminSidebarWrapper } from "../components/sidebar/adminSidebar";
 
 interface Props {
   children: React.ReactNode;
