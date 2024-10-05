@@ -21,6 +21,7 @@ export async function middleware(request: NextRequest) {
 
   decodedToken = jwtVerify(accessToken) as any;
 
+  console.log("decodedToken", decodedToken);
   const { role } = decodedToken;
 
   if (role === "admin" && pathname === "admin-dashboard") {
