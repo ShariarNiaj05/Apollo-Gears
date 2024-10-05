@@ -1,8 +1,5 @@
 "use client";
 
-import { NavbarWrapper } from "@/app/(dashboardLayout)/components/dashboardNabbar/dashboardNavbar";
-import { SidebarWrapper } from "@/app/(dashboardLayout)/components/sidebar/sidebar.styles";
-
 interface Props {
   children: React.ReactNode;
 }
