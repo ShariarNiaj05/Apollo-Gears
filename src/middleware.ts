@@ -39,7 +39,7 @@ export async function middleware(request: NextRequest) {
   if (role === "driver" && pathname.match(/^\/driver-dashboard/)) {
     return NextResponse.next();
   }
-  if (role === "user" && pathname === "/dashboard") {
+  if (role === "user" && pathname.match(/^\/dashboard/)) {
     return NextResponse.next();
   }
 
