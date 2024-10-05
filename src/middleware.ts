@@ -26,6 +26,10 @@ export async function middleware(request: NextRequest) {
   if (role === "admin" && pathname === "admin-dashboard") {
     return NextResponse.next();
   }
+
+  if (role === "driver" && pathname === "driver-dashboard") {
+    return NextResponse.next();
+  }
 }
 
 export const config = {
