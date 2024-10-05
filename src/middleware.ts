@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
-import { decode, jwtVerify } from "./helpers/jwtHelpers";
+import { decode } from "./helpers/jwtHelpers";
 
 const authRoutes = ["/login", "/register"];
 export async function middleware(request: NextRequest) {
