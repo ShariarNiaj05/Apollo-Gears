@@ -1,7 +1,10 @@
 import { Input, Navbar, NavbarContent } from "@nextui-org/react";
 import React from "react";
 import { ChevronLeft, Menu, SearchCheck } from "lucide-react";
-
+import { useSidebarContext } from "@/app/(dashboardLayout)/layout/layout-context";
+import { UserDropdown } from "./user-dropdown";
+// import { useSidebarContext } from "../../layout/layout-context";
+// import { UserDropdown } from "./user-dropdown";
 interface Props {
   children: React.ReactNode;
 }
