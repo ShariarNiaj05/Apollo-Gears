@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
-import { jwtVerify } from "./helpers/jwtHelpers";
+import { decode, jwtVerify } from "./helpers/jwtHelpers";
 
 const authRoutes = ["/login", "/register"];
 export async function middleware(request: NextRequest) {
@@ -19,9 +19,10 @@ export async function middleware(request: NextRequest) {
   // role based authorization
   let decodedToken = null;
 
-  decodedToken = jwtVerify(accessToken) as any;
+  decodedToken = decode(accessToken) as any;
 
   console.log("decodedToken", decodedToken);
+
   const { role } = decodedToken;
   console.log(role, "role");
   console.log(pathname, "pathname");
