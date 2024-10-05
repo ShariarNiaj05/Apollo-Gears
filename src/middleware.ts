@@ -30,6 +30,9 @@ export async function middleware(request: NextRequest) {
   if (role === "driver" && pathname === "driver-dashboard") {
     return NextResponse.next();
   }
+  if (role === "user" && pathname === "dashboard") {
+    return NextResponse.next();
+  }
 }
 
 export const config = {
