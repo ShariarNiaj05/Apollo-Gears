@@ -5,11 +5,5 @@ interface Props {
 }
 
 export const UserLayout = ({ children }: Props) => {
-  return (
-    <section className="flex">
-      <SidebarWrapper></SidebarWrapper>
-
-      <NavbarWrapper>{children}</NavbarWrapper>
-    </section>
-  );
+  return <section className="flex">{children}</section>;
 };
