@@ -38,12 +38,7 @@ export const UserDropdown = () => {
         <DropdownItem key="system">System</DropdownItem>
         <DropdownItem key="configurations">Configurations</DropdownItem>
         <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
-        <DropdownItem
-          //   onClick={() => logOutUser()}
-          key="logout"
-          color="danger"
-          className="text-danger "
-        >
+        <DropdownItem key="logout" color="danger" className="text-danger ">
           Log Out
         </DropdownItem>
         <DropdownItem key="switch">
